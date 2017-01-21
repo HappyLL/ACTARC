@@ -9,7 +9,7 @@ namespace ACTBase
         private List<ITick> m_vITickList;
         private Dictionary<ITick, int> m_mITickHash;
 
-        //当前帧加入的ITick 会放到下一帧更新
+        //当前帧加入的ITick 会放到下一帧更新(如果立即执行会 出现A中更新逻辑不断new A 导致一帧会进入死循环 执行不完)
         private List<ITick> m_vDelayAddList;
         //当前帧删除的ITick 会先更新逻辑在删除
         private List<ITick> m_vDelayRemoveList;
