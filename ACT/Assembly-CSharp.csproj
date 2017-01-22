@@ -45,6 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\GameLibs\Common\GFunction.cs" />
+     <Compile Include="Assets\Scripts\GameLibs\Common\MgrBase.cs" />
+     <Compile Include="Assets\Scripts\GameLibs\Common\ObjectPool.cs" />
+     <Compile Include="Assets\Scripts\GameLibs\Common\XmlData.cs" />
      <Compile Include="Assets\Scripts\GameLibs\Interface\ITick.cs" />
      <Compile Include="Assets\Scripts\GameLibs\Ticker\Ticker.cs" />
      <Compile Include="Assets\Scripts\GameLibs\Ticker\TickerMgr.cs" />
