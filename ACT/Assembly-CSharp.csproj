@@ -49,10 +49,14 @@
      <Compile Include="Assets\Scripts\GameLibs\Common\MgrBase.cs" />
      <Compile Include="Assets\Scripts\GameLibs\Common\ObjectPool.cs" />
      <Compile Include="Assets\Scripts\GameLibs\Common\XmlData.cs" />
+     <Compile Include="Assets\Scripts\GameLibs\Data\Character\CharacterData.cs" />
+     <Compile Include="Assets\Scripts\GameLibs\Data\CommonData\CountDownItemData.cs" />
+     <Compile Include="Assets\Scripts\GameLibs\Interface\IObject.cs" />
      <Compile Include="Assets\Scripts\GameLibs\Interface\ITick.cs" />
      <Compile Include="Assets\Scripts\GameLibs\Ticker\Ticker.cs" />
      <Compile Include="Assets\Scripts\GameLibs\Ticker\TickerMgr.cs" />
      <Compile Include="Assets\Scripts\GameStart.cs" />
+     <None Include="Assets\Resources\Config\CharacterList.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>F:/unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

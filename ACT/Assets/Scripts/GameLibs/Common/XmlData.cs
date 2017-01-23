@@ -4,7 +4,7 @@ using System.Xml;
 using System;
 using System.Collections.Generic;
 
-namespace XDBase
+namespace ACTBase
 {
     public interface XmlData
     {
@@ -88,6 +88,7 @@ namespace XDBase
                 if (ele != null && name == ele.Name)
                 {
                     data.Read(ele);
+                    break;
                 }
             }
         }
