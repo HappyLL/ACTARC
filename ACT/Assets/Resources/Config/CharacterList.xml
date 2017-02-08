@@ -654,7 +654,7 @@
       </StateMacData>
 	</BigStateMacData>
   </CharacterData>
-  
+
   <CharacterData iId="2" sName="ELL.BLUE" iAiId="2">
 	  <CharacterSkillGroupData bAble="True">
 		  <XpCdItemData iId="0" sName="Xp递增cd" iMaxValue="200" iMinValue="0" iInitValue="200" iChangeIntervalTick="1" iChangeValue="1"/>
@@ -668,7 +668,7 @@
 			  <CountDownItemData iId="0" sName="技能1cd" iMaxValue="500" iMinValue="0" iInitValue="0" iChangeIntervalTick="1" iChangeValue="-1"/>
 		  </CharacterSkillCellData>
 	  </CharacterSkillGroupData>
-    <BattleObjectData eObjectType="1" fScale="1" bCanHurt="True">
+    <BattleObjectData eObjectType="1" fScale="0.1" bCanHurt="True">
 	  <BattleActionData fCoaxialRangeY="0.2" fWanderRangeX="5.0" fHorizonRangeX="3.0" fAttackRangeX="1.5" iSkillCount="3" iControlCharacterMaxCount="4"/>
       <BoundingBox>
         <Min x="-0.8" y="-0.5" h="0" />
@@ -870,7 +870,7 @@
               <TurnUpStateUnit iStateMacId="1" iStateId="1" eTrunStateType="2" />
             </ActionResultData>
           </ActionCellData>
- 
+
           </StateCellData>
       </StateMacData>
       <StateMacData iId="2" sName="技能状态机" eStateMacTypeMark="3">
@@ -1924,8 +1924,8 @@
                 </BoundingBox>
               </AttackObjectData>
             </ActionResultData>
-          </ActionCellData>		  
-		  
+          </ActionCellData>
+
 		  <ActionCellData iId="2" sName="白屏" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="170" iMaxFrame="170" />
@@ -1933,8 +1933,8 @@
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
 			<SceneEffectItemData fFlashSceneDuration="0.4" eShakeType="2" fShakeDuration="0.2" fShakeThreshold="0.2"/>
             </ActionResultData>
-          </ActionCellData>		  
-		  
+          </ActionCellData>
+
 		  <ActionCellData iId="2" sName="震屏" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="96" iMaxFrame="96" />
@@ -1943,7 +1943,7 @@
               <SceneEffectItemData eShakeType="2" fShakeDuration="0.2" fShakeThreshold="0.14"/>
             </ActionResultData>
           </ActionCellData>
-		  
+
 		  <ActionCellData iId="2" sName="震屏" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="106" iMaxFrame="106" />
@@ -1952,7 +1952,7 @@
               <SceneEffectItemData eShakeType="2" fShakeDuration="0.2" fShakeThreshold="0.14"/>
             </ActionResultData>
           </ActionCellData>
-		  
+
 		  <ActionCellData iId="2" sName="震屏" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="138" iMaxFrame="138" />
@@ -1969,8 +1969,8 @@
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <SceneEffectItemData eShakeType="2" fShakeDuration="0.2" fShakeThreshold="0.14"/>
             </ActionResultData>
-          </ActionCellData>		  
-		  
+          </ActionCellData>
+
           <ActionCellData iId="2" sName="音效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="0" iMaxFrame="0" />
@@ -1997,7 +1997,7 @@
               <SoundItemData sAudioPath="sound/bulu/ping" bLoop="False" />
             </ActionResultData>
           </ActionCellData>
-		  		  
+
 
 
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
@@ -2014,7 +2014,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		  
+          </ActionCellData>
 
 		  <ActionCellData iId="2" sName="黑屏" eTriggerMode="2">
             <ActionAttrData bAble="False" />
@@ -2024,7 +2024,7 @@
 				<SceneEffectItemData fFlashSceneDuration="0" eShakeType="2" fShakeDuration="0.2" fShakeThreshold="0.2" eBlackType="1" fMaxGrayValue="0.9" fUpTime="0.3" fKeepTime="0.6" fDownTime="0.6"/>
 			</ActionResultData>
           </ActionCellData>
-		  
+
 		  <ActionCellData iId="2" sName="爆屏" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="173" iMaxFrame="173" />
@@ -2034,8 +2034,8 @@
 			</ActionResultData>
 
           </ActionCellData>
-		  
-		  
+
+
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="False"  />
             <ActionFrameData bAble="True" iMinFrame="6" iMaxFrame="6" />
@@ -2050,11 +2050,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 
+          </ActionCellData>
 
-		  
-	  
-		  
+
+
+
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="False"  />
             <ActionFrameData bAble="True" iMinFrame="21" iMaxFrame="21" />
@@ -2069,10 +2069,10 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 
+          </ActionCellData>
 
-		  
-		  
+
+
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="False"  />
             <ActionFrameData bAble="True" iMinFrame="36" iMaxFrame="36" />
@@ -2087,10 +2087,10 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 
+          </ActionCellData>
 
-		  
-		  
+
+
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="False"  />
             <ActionFrameData bAble="True" iMinFrame="51" iMaxFrame="51" />
@@ -2105,10 +2105,10 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 
+          </ActionCellData>
 
-		  
-		  
+
+
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="False"  />
             <ActionFrameData bAble="True" iMinFrame="80" iMaxFrame="80" />
@@ -2123,10 +2123,10 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 
+          </ActionCellData>
 
-			  
-		  
+
+
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="False"  />
             <ActionFrameData bAble="True" iMinFrame="96" iMaxFrame="96" />
@@ -2141,10 +2141,10 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 
+          </ActionCellData>
 
- 	  
-		  
+
+
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="False"  />
             <ActionFrameData bAble="True" iMinFrame="110" iMaxFrame="110" />
@@ -2159,10 +2159,10 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 
+          </ActionCellData>
 
-		  
-		  
+
+
 
 
 		</StateCellData>
@@ -2693,8 +2693,8 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 		  
-		  
+          </ActionCellData>
+
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="10" iMaxFrame="10" />
@@ -2709,7 +2709,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
@@ -2725,7 +2725,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 			  		  
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
@@ -2741,8 +2741,8 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 		  
-		  
+          </ActionCellData>
+
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="28" iMaxFrame="28" />
@@ -2757,7 +2757,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
@@ -2773,7 +2773,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 			  		  
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
@@ -2789,8 +2789,8 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 		  
-		  
+          </ActionCellData>
+
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="16" iMaxFrame="16" />
@@ -2805,7 +2805,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
@@ -2821,7 +2821,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 			  		  
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
@@ -2837,11 +2837,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 				  
+          </ActionCellData>
 
-	  
-		  
-		  
+
+
+
 		  </StateCellData>
 
         <StateCellData iId="7" sName="EFFECT3" iStateMacId="2" iSkillGroupId="0" iViewEndTick="106" iSuperArmor="1000" bStateLoop="False">
@@ -3379,8 +3379,8 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 
-		  
+          </ActionCellData>
+
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="69" iMaxFrame="69" />
@@ -3395,7 +3395,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
@@ -3411,8 +3411,8 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 			  		  
-		  
+          </ActionCellData>
+
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="72" iMaxFrame="72" />
@@ -3427,7 +3427,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="攻击特效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
@@ -3443,7 +3443,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 		  		  
+          </ActionCellData>
 
 		  </StateCellData>
 
@@ -3671,7 +3671,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
- 
+
           <ActionCellData iId="1" sName="转BEATTACKFALL1" eTriggerMode="3">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="False" />
@@ -3880,7 +3880,7 @@
       </StateMacData>
 	</BigStateMacData>
   </CharacterData>
-  
+
   <CharacterData iId="4" sName="机器男" iAiId="4">
   	<CharacterSkillGroupData bAble="False"/>
     <BattleObjectData eObjectType="1" fScale="1" bCanHurt="True">
@@ -4165,7 +4165,7 @@
               </AttackObjectData>
             </ActionResultData>
           </ActionCellData>
-		  
+
         </StateCellData>
         <StateCellData iId="5" sName="EFFECT2" iStateMacId="2" iSkillGroupId="0" iViewEndTick="22" iSuperArmor="10" bStateLoop="False">
           <ResItemData eResItemType="1" sResPathName="characters/mon1" sClassName="ATTACK2" />
@@ -4614,7 +4614,7 @@
                 <Acc x="0" y="0" h="0" />
               </PhysicMoveData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
         </StateCellData>
 		<StateCellData iId="2" sName="DEADJUMP" iStateMacId="4" iSkillGroupId="0" iViewEndTick="16" iSuperArmor="10" bStateLoop="False">
           <ResItemData eResItemType="1" sResPathName="characters/mon1" sClassName="BEATTACKFALL1" fAlpha="1" />
@@ -4691,7 +4691,7 @@
                 <Acc x="0" y="0" h="0" />
               </PhysicMoveData>
             </ActionResultData>
-          </ActionCellData>			 
+          </ActionCellData>
 		  <ActionCellData iId="1" sName="位移5" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="20" iMaxFrame="24" />
@@ -4715,10 +4715,10 @@
                 <Acc x="0" y="0" h="0" />
               </PhysicMoveData>
             </ActionResultData>
-          </ActionCellData>			  
+          </ActionCellData>
 		  <ActionCellData iId="2" sName="死亡特效1" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="29" iMaxFrame="29" />	
+            <ActionFrameData bAble="True" iMinFrame="29" iMaxFrame="29" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="700" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -4730,7 +4730,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
           <ActionCellData iId="2" sName="音效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="29" iMaxFrame="29" />
@@ -4751,7 +4751,7 @@
       </StateMacData>
 	</BigStateMacData>
   </CharacterData>
-  
+
   <CharacterData iId="5" sName="双脚机器" iAiId="5">
   	<CharacterSkillGroupData bAble="False"/>
     <BattleObjectData eObjectType="1" fScale="1" bCanHurt="True">
@@ -4987,9 +4987,9 @@
         </ActionCellData>
         <StateCellData iId="4" sName="EFFECT1" iStateMacId="2" iSkillGroupId="0" iViewEndTick="98" iSuperArmor="10" bStateLoop="False">
           <ResItemData eResItemType="1" sResPathName="characters/mon2" sClassName="EFFECT1" />
-          <EndStateUnit iStateMacId="1" iStateId="1" eTrunStateType="4" />		  
+          <EndStateUnit iStateMacId="1" iStateId="1" eTrunStateType="4" />
 
-		 	 
+
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
             <ActionFrameData bAble="True" iMinFrame="10" iMaxFrame="10" />
@@ -5005,7 +5005,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="10" iMaxFrame="10" />
@@ -5020,8 +5020,8 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		  
-		  
+          </ActionCellData>
+
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
             <ActionFrameData bAble="True" iMinFrame="10" iMaxFrame="10" />
@@ -5037,7 +5037,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="10" iMaxFrame="10" />
@@ -5052,10 +5052,10 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		  
-		   		  
-    
-		  
+          </ActionCellData>
+
+
+
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
             <ActionFrameData bAble="True" iMinFrame="70" iMaxFrame="70" />
@@ -5071,7 +5071,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="70" iMaxFrame="70" />
@@ -5086,8 +5086,8 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		  
-		  		  
+          </ActionCellData>
+
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
             <ActionFrameData bAble="True" iMinFrame="100" iMaxFrame="100" />
@@ -5103,7 +5103,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="100" iMaxFrame="100" />
@@ -5118,9 +5118,9 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		  
-		  		  
-	 
+          </ActionCellData>
+
+
 
           <ActionCellData iId="2" sName="音效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
@@ -5175,7 +5175,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="聚气特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="0" iMaxFrame="0" />
@@ -5191,7 +5191,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
 		  <ActionCellData iId="2" sName="激光特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="24" iMaxFrame="24" />
@@ -5241,7 +5241,7 @@
               <SoundItemData sAudioPath="sound/mon/sabrhit5" bLoop="False" />
             </ActionResultData>
           </ActionCellData>
-		  
+
         </StateCellData>
       </StateMacData>
       <StateMacData iId="3" sName="受击状态机" eStateMacTypeMark="4">
@@ -5604,7 +5604,7 @@
                 <Acc x="0" y="0" h="0" />
               </PhysicMoveData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
         </StateCellData>
 		<StateCellData iId="2" sName="DEADJUMP" iStateMacId="4" iSkillGroupId="0" iViewEndTick="16" iSuperArmor="10" bStateLoop="False">
           <ResItemData eResItemType="1" sResPathName="characters/mon2" sClassName="BEATTACKFALL2" fAlpha="1" />
@@ -5681,7 +5681,7 @@
                 <Acc x="0" y="0" h="0" />
               </PhysicMoveData>
             </ActionResultData>
-          </ActionCellData>			 
+          </ActionCellData>
 		  <ActionCellData iId="1" sName="位移5" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="20" iMaxFrame="24" />
@@ -5705,10 +5705,10 @@
                 <Acc x="0" y="0" h="0" />
               </PhysicMoveData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
 		  <ActionCellData iId="2" sName="死亡特效1" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="29" iMaxFrame="29" />	
+            <ActionFrameData bAble="True" iMinFrame="29" iMaxFrame="29" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="700" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -5720,7 +5720,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
           <ActionCellData iId="2" sName="音效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="29" iMaxFrame="29" />
@@ -5736,12 +5736,12 @@
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="True">
               <ControlStateMarkData eControlStateMark="2" />
             </ActionResultData>
-          </ActionCellData>  
+          </ActionCellData>
         </StateCellData>
       </StateMacData>
 	</BigStateMacData>
   </CharacterData>
-  
+
   <CharacterData iId="6" sName="机器boss" iAiId="2">
   	<CharacterSkillGroupData bAble="False"/>
     <BattleObjectData eObjectType="1" fScale="1" bCanHurt="True">
@@ -5861,7 +5861,7 @@
             <TurnUpStateUnit iStateMacId="2" iStateId="10" eTrunStateType="2" />
           </ActionResultData>
         </ActionCellData>
- 
+
 
 
         <StateCellData iId="1" sName="IDLE" iStateMacId="1" iSkillGroupId="0" iViewEndTick="120" iSuperArmor="10" bStateLoop="True">
@@ -5927,7 +5927,7 @@
                 <Acc x="0" y="0" h="0" />
               </PhysicMoveData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
           <ActionCellData iId="1" sName="按w持续移动" eTriggerMode="3">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="1" iMaxFrame="25" />
@@ -5941,7 +5941,7 @@
                 <Acc x="0" y="0" h="0" />
               </PhysicMoveData>
             </ActionResultData>
-          </ActionCellData>		  
+          </ActionCellData>
           <ActionCellData iId="2" sName="按a持续移动" eTriggerMode="3">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="50" iMaxFrame="86" />
@@ -5954,9 +5954,9 @@
                 <Speed x="0" y="0" h="0" />
                 <Acc x="0" y="0" h="0" />
               </PhysicMoveData>
-              <ActionResultAttrData eChangeType="2" eValueType="1" bFaceLeft="True" />			  
+              <ActionResultAttrData eChangeType="2" eValueType="1" bFaceLeft="True" />
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
           <ActionCellData iId="2" sName="按a持续移动" eTriggerMode="3">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="1" iMaxFrame="25" />
@@ -5971,7 +5971,7 @@
               </PhysicMoveData>
               <ActionResultAttrData eChangeType="2" eValueType="1" bFaceLeft="True" />
 			  </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
           <ActionCellData iId="3" sName="按s持续移动" eTriggerMode="3">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="50" iMaxFrame="86" />
@@ -5985,7 +5985,7 @@
                 <Acc x="0" y="0" h="0" />
               </PhysicMoveData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
           <ActionCellData iId="3" sName="按s持续移动" eTriggerMode="3">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="1" iMaxFrame="25" />
@@ -5999,7 +5999,7 @@
                 <Acc x="0" y="0" h="0" />
               </PhysicMoveData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
           <ActionCellData iId="4" sName="按d持续移动" eTriggerMode="3">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="50" iMaxFrame="86" />
@@ -6012,9 +6012,9 @@
                 <Speed x="0" y="0" h="0" />
                 <Acc x="0" y="0" h="0" />
               </PhysicMoveData>
-              <ActionResultAttrData eChangeType="2" eValueType="1" bFaceLeft="False" />			  
+              <ActionResultAttrData eChangeType="2" eValueType="1" bFaceLeft="False" />
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
           <ActionCellData iId="4" sName="按d持续移动" eTriggerMode="3">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="1" iMaxFrame="25" />
@@ -6029,7 +6029,7 @@
               </PhysicMoveData>
               <ActionResultAttrData eChangeType="2" eValueType="1" bFaceLeft="False" />
 			  </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
           <ActionCellData iId="5" sName="方向键全放转IDLE" eTriggerMode="1">
             <ActionAttrData bAble="True" eActionAttrType="1">
               <KeyUnit eKeyState="2" sKeyValue="w" />
@@ -6082,7 +6082,7 @@
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <SoundItemData sAudioPath="sound/mon/guanjie" bLoop="False" />
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="音效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
@@ -6091,8 +6091,8 @@
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <SoundItemData sAudioPath="sound/mon/guanjie2" bLoop="False" />
             </ActionResultData>
-          </ActionCellData>	
-		  		  
+          </ActionCellData>
+
           <ActionCellData iId="2" sName="音效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="44" iMaxFrame="44" />
@@ -6122,7 +6122,7 @@
                 <Acc x="0" y="0" h="0" />
               </PhysicMoveData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
 
 
 
@@ -6137,9 +6137,9 @@
                 <Acc x="0" y="0" h="0" />
               </PhysicMoveData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
 
-		  
+
  <StateCellMoveData iFrameTick="160" x="-0.08" y="0" h="0"/>
 <StateCellMoveData iFrameTick="162" x="0.06" y="0" h="0"/>
 <StateCellMoveData iFrameTick="164" x="-0.07" y="0" h="0"/>
@@ -6161,8 +6161,8 @@
 <StateCellMoveData iFrameTick="196" x="-0.06" y="0" h="0"/>
 <StateCellMoveData iFrameTick="198" x="0.03" y="0" h="0"/>
 <StateCellMoveData iFrameTick="200" x="-0.05" y="0" h="0"/>
-  
-		  
+
+
           <ActionCellData iId="2" sName="Effect2攻击1" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="120" iMaxFrame="124" />
@@ -6458,10 +6458,10 @@
               </AttackObjectData>
             </ActionResultData>
           </ActionCellData>
-		 
-	
+
+
         </StateCellData>
-		
+
         <StateCellData iId="5" sName="EFFECT2" iStateMacId="2" iSkillGroupId="0" iViewEndTick="70" iSuperArmor="10" bStateLoop="False">
           <ResItemData eResItemType="1" sResPathName="characters/boss1" sClassName="EFFECT2" />
           <EndStateUnit iStateMacId="1" iStateId="1" eTrunStateType="4" />
@@ -6492,8 +6492,8 @@
                 </BoundingBox>
               </AttackObjectData>
             </ActionResultData>
-		</ActionCellData>		  
-		  
+		</ActionCellData>
+
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
             <ActionFrameData bAble="True" iMinFrame="20" iMaxFrame="20" />
@@ -6509,7 +6509,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="20" iMaxFrame="20" />
@@ -6524,8 +6524,8 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		  
-		  
+          </ActionCellData>
+
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
             <ActionFrameData bAble="True" iMinFrame="25" iMaxFrame="25" />
@@ -6541,7 +6541,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="25" iMaxFrame="25" />
@@ -6556,7 +6556,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		 		  
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
@@ -6573,7 +6573,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="30" iMaxFrame="30" />
@@ -6588,8 +6588,8 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>				  
-		  
+          </ActionCellData>
+
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
             <ActionFrameData bAble="True" iMinFrame="35" iMaxFrame="35" />
@@ -6605,7 +6605,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="35" iMaxFrame="35" />
@@ -6620,7 +6620,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>			  
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
@@ -6637,7 +6637,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="40" iMaxFrame="40" />
@@ -6652,7 +6652,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
@@ -6669,7 +6669,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="45" iMaxFrame="45" />
@@ -6684,7 +6684,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
@@ -6701,7 +6701,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="50" iMaxFrame="50" />
@@ -6716,7 +6716,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
@@ -6733,7 +6733,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="55" iMaxFrame="55" />
@@ -6748,7 +6748,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
@@ -6765,7 +6765,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="60" iMaxFrame="60" />
@@ -6780,7 +6780,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
@@ -6797,7 +6797,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="65" iMaxFrame="65" />
@@ -6812,7 +6812,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
@@ -6829,7 +6829,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="20" iMaxFrame="20" />
@@ -6844,8 +6844,8 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		  
-		  
+          </ActionCellData>
+
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
             <ActionFrameData bAble="True" iMinFrame="25" iMaxFrame="25" />
@@ -6861,7 +6861,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="25" iMaxFrame="25" />
@@ -6876,7 +6876,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		 		  
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
@@ -6893,7 +6893,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="30" iMaxFrame="30" />
@@ -6908,8 +6908,8 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>				  
-		  
+          </ActionCellData>
+
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
             <ActionFrameData bAble="True" iMinFrame="35" iMaxFrame="35" />
@@ -6925,7 +6925,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="35" iMaxFrame="35" />
@@ -6940,7 +6940,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>			  
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
@@ -6957,7 +6957,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="40" iMaxFrame="40" />
@@ -6972,7 +6972,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
@@ -6989,7 +6989,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="45" iMaxFrame="45" />
@@ -7004,7 +7004,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
@@ -7021,7 +7021,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="50" iMaxFrame="50" />
@@ -7036,7 +7036,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
@@ -7053,7 +7053,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="55" iMaxFrame="55" />
@@ -7068,7 +7068,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
@@ -7085,7 +7085,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="60" iMaxFrame="60" />
@@ -7100,7 +7100,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="正向发射子弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
@@ -7117,7 +7117,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射子弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="65" iMaxFrame="65" />
@@ -7132,7 +7132,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>			  		  
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="音效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
@@ -7151,7 +7151,7 @@
               <SoundItemData sAudioPath="sound/mon/Bow_shot_a" bLoop="False" />
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="音效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="30" iMaxFrame="30" />
@@ -7159,7 +7159,7 @@
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <SoundItemData sAudioPath="sound/mon/Bow_shot_a" bLoop="False" />
             </ActionResultData>
-          </ActionCellData>		  
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="音效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
@@ -7283,7 +7283,7 @@
               <SceneEffectItemData eShakeType="2" fShakeDuration="0.2" fShakeThreshold="0.2"/>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="1" sName="位移1" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="21" iMaxFrame="30" />
@@ -7307,7 +7307,7 @@
                 <Acc x="0" y="0" h="0" />
               </PhysicMoveData>
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="正向起跳烟特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
@@ -7324,7 +7324,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="起跳烟特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="19" iMaxFrame="19" />
@@ -7339,7 +7339,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		  
+          </ActionCellData>
 
 
           <ActionCellData iId="2" sName="音效" eTriggerMode="2">
@@ -7349,8 +7349,8 @@
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <SoundItemData sAudioPath="sound/mon/Fire_Shot_b" bLoop="False" />
             </ActionResultData>
-          </ActionCellData>		  		  
-		  
+          </ActionCellData>
+
           <ActionCellData iId="2" sName="音效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="50" iMaxFrame="50" />
@@ -7359,12 +7359,12 @@
               <SoundItemData sAudioPath="sound/mon/CriticalHit_Re" bLoop="False" />
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="撞击地面特效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="60" iMaxFrame="60" />
             <ActionInputData bAble="False" />
-            <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">			
+            <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="304" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
                 <OffSet x="0" y="-0.4" h="0" />
                 <PhysicMoveData bNeedFace="True">
@@ -7392,7 +7392,7 @@
           </ActionCellData>
           <ActionCellData iId="2" sName="灰尘特效2" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="60" iMaxFrame="60" />	
+            <ActionFrameData bAble="True" iMinFrame="60" iMaxFrame="60" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="303" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -7404,7 +7404,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		  
+          </ActionCellData>
 		  </StateCellData>
 
         <StateCellData iId="7" sName="EFFECT4" iStateMacId="2" iSkillGroupId="0" iViewEndTick="80" iSuperArmor="100000" bStateLoop="False">
@@ -7480,8 +7480,8 @@
               </AttackObjectData>
             </ActionResultData>
           </ActionCellData>
-	  
-		  
+
+
           <ActionCellData iId="2" sName="攻击2" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="90" iMaxFrame="106" />
@@ -7524,7 +7524,7 @@
               <SceneEffectItemData eShakeType="2" fShakeDuration="0.2" fShakeThreshold="0.2"/>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="1" sName="位移1" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="60" iMaxFrame="106" />
@@ -7545,7 +7545,7 @@
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <SoundItemData sAudioPath="sound/mon/guanjie2" bLoop="False" />
             </ActionResultData>
-          </ActionCellData>	
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="音效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
@@ -7554,8 +7554,8 @@
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <SoundItemData sAudioPath="sound/mon/guanjie" bLoop="False" />
             </ActionResultData>
-          </ActionCellData>			  
-		  
+          </ActionCellData>
+
           <ActionCellData iId="2" sName="音效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="30" iMaxFrame="30" />
@@ -7563,8 +7563,8 @@
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <SoundItemData sAudioPath="sound/mon/bossskill" bLoop="False" />
             </ActionResultData>
-          </ActionCellData>		  
-		  
+          </ActionCellData>
+
           <ActionCellData iId="2" sName="飞尘特效" eTriggerMode="2">
             <ActionAttrData bAble="False"  />
             <ActionFrameData bAble="True" iMinFrame="40" iMaxFrame="40" />
@@ -7579,7 +7579,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞尘特效" eTriggerMode="2">
             <ActionAttrData bAble="False"  />
@@ -7595,7 +7595,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞尘特效" eTriggerMode="2">
             <ActionAttrData bAble="False"  />
@@ -7611,7 +7611,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞尘特效" eTriggerMode="2">
             <ActionAttrData bAble="False"  />
@@ -7627,7 +7627,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞尘特效" eTriggerMode="2">
             <ActionAttrData bAble="False"  />
@@ -7643,7 +7643,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞尘特效" eTriggerMode="2">
             <ActionAttrData bAble="False"  />
@@ -7659,7 +7659,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData> 
+          </ActionCellData>
 
 		  </StateCellData>
 
@@ -7676,8 +7676,8 @@
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <SoundItemData sAudioPath="sound/mon/chuansong" bLoop="False" />
             </ActionResultData>
-          </ActionCellData>	
-		  
+          </ActionCellData>
+
 		  <ActionCellData iId="2" sName="创建小怪" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="75" iMaxFrame="75" />
@@ -7720,12 +7720,12 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
-		  
+          </ActionCellData>
 
-		  
-		  </StateCellData>		  
-		  
+
+
+		  </StateCellData>
+
 
 		<StateCellData iId="9" sName="EFFECT6" iStateMacId="1" iSkillGroupId="0" iViewEndTick="100" iSuperArmor="10" bStateLoop="False">
           <ResItemData eResItemType="1" sResPathName="characters/boss1" sClassName="IDLE" />
@@ -7758,10 +7758,10 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="0" iMaxFrame="0" />	
+            <ActionFrameData bAble="True" iMinFrame="0" iMaxFrame="0" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -7773,11 +7773,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>			  
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="6" iMaxFrame="6" />	
+            <ActionFrameData bAble="True" iMinFrame="6" iMaxFrame="6" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -7789,11 +7789,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="12" iMaxFrame="12" />	
+            <ActionFrameData bAble="True" iMinFrame="12" iMaxFrame="12" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -7805,11 +7805,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="18" iMaxFrame="18" />	
+            <ActionFrameData bAble="True" iMinFrame="18" iMaxFrame="18" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -7821,11 +7821,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="24" iMaxFrame="24" />	
+            <ActionFrameData bAble="True" iMinFrame="24" iMaxFrame="24" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -7837,11 +7837,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="30" iMaxFrame="30" />	
+            <ActionFrameData bAble="True" iMinFrame="30" iMaxFrame="30" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -7853,11 +7853,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="36" iMaxFrame="36" />	
+            <ActionFrameData bAble="True" iMinFrame="36" iMaxFrame="36" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -7869,11 +7869,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="42" iMaxFrame="42" />	
+            <ActionFrameData bAble="True" iMinFrame="42" iMaxFrame="42" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -7885,11 +7885,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="48" iMaxFrame="48" />	
+            <ActionFrameData bAble="True" iMinFrame="48" iMaxFrame="48" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -7901,11 +7901,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="54" iMaxFrame="54" />	
+            <ActionFrameData bAble="True" iMinFrame="54" iMaxFrame="54" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -7917,11 +7917,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="60" iMaxFrame="60" />	
+            <ActionFrameData bAble="True" iMinFrame="60" iMaxFrame="60" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -7933,13 +7933,13 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
 
-		  </StateCellData>	  
+		  </StateCellData>
 
-		  
-		  
-		  
+
+
+
         <StateCellData iId="10" sName="EFFECT7" iStateMacId="2" iSkillGroupId="0" iViewEndTick="70" iSuperArmor="10" bStateLoop="False">
           <ResItemData eResItemType="1" sResPathName="characters/boss1" sClassName="EFFECT2" />
           <EndStateUnit iStateMacId="1" iStateId="1" eTrunStateType="4" />
@@ -7970,8 +7970,8 @@
                 </BoundingBox>
               </AttackObjectData>
             </ActionResultData>
-		</ActionCellData>		  
-		  
+		</ActionCellData>
+
           <ActionCellData iId="1" sName="转开枪" eTriggerMode="3">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="69" iMaxFrame="69" />
@@ -7981,8 +7981,8 @@
             </ActionResultData>
           </ActionCellData>
 		  </StateCellData>
-		  		  
-		  
+
+
 		<StateCellData iId="11" sName="EFFECT8开枪" iStateMacId="1" iSkillGroupId="0" iViewEndTick="100" iSuperArmor="10" bStateLoop="False">
           <ResItemData eResItemType="1" sResPathName="characters/boss1" sClassName="IDLE" />
           <EndStateUnit iStateMacId="1" iStateId="1" eTrunStateType="4" />
@@ -8014,26 +8014,10 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
-          <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
-            <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="0" iMaxFrame="0" />	
-            <ActionInputData bAble="False" />
-            <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
-              <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
-                <OffSet x="0" y="-0.01" h="3.25" />
-                <PhysicMoveData bNeedFace="True">
-                  <OffSet x="0" y="0" h="0" />
-                  <Speed x="0" y="0" h="0" />
-                  <Acc x="0" y="0" h="0" />
-                </PhysicMoveData>
-              </EffectCreateData>
-            </ActionResultData>
-          </ActionCellData>			  
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="6" iMaxFrame="6" />	
+            <ActionFrameData bAble="True" iMinFrame="0" iMaxFrame="0" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -8045,11 +8029,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="12" iMaxFrame="12" />	
+            <ActionFrameData bAble="True" iMinFrame="6" iMaxFrame="6" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -8061,11 +8045,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="18" iMaxFrame="18" />	
+            <ActionFrameData bAble="True" iMinFrame="12" iMaxFrame="12" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -8077,11 +8061,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="24" iMaxFrame="24" />	
+            <ActionFrameData bAble="True" iMinFrame="18" iMaxFrame="18" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -8093,11 +8077,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="30" iMaxFrame="30" />	
+            <ActionFrameData bAble="True" iMinFrame="24" iMaxFrame="24" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -8109,11 +8093,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="36" iMaxFrame="36" />	
+            <ActionFrameData bAble="True" iMinFrame="30" iMaxFrame="30" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -8125,11 +8109,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="42" iMaxFrame="42" />	
+            <ActionFrameData bAble="True" iMinFrame="36" iMaxFrame="36" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -8141,11 +8125,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="48" iMaxFrame="48" />	
+            <ActionFrameData bAble="True" iMinFrame="42" iMaxFrame="42" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -8157,11 +8141,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="54" iMaxFrame="54" />	
+            <ActionFrameData bAble="True" iMinFrame="48" iMaxFrame="48" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -8173,11 +8157,11 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="60" iMaxFrame="60" />	
+            <ActionFrameData bAble="True" iMinFrame="54" iMaxFrame="54" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -8189,7 +8173,23 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
+
+          <ActionCellData iId="2" sName="飞行道具" eTriggerMode="2">
+            <ActionAttrData bAble="False" />
+            <ActionFrameData bAble="True" iMinFrame="60" iMaxFrame="60" />
+            <ActionInputData bAble="False" />
+            <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
+              <EffectCreateData iId="1" sName="测试特效" iEffectId="340" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
+                <OffSet x="0" y="-0.01" h="3.25" />
+                <PhysicMoveData bNeedFace="True">
+                  <OffSet x="0" y="0" h="0" />
+                  <Speed x="0" y="0" h="0" />
+                  <Acc x="0" y="0" h="0" />
+                </PhysicMoveData>
+              </EffectCreateData>
+            </ActionResultData>
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="正向发射飞弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
@@ -8206,7 +8206,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射飞弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="24" iMaxFrame="24" />
@@ -8221,7 +8221,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		  
+          </ActionCellData>
 
           <ActionCellData iId="2" sName="正向发射飞弹特效" eTriggerMode="2">
             <ActionAttrData  bAble="True" eActionAttrType="4" bFaceLeft="False" />
@@ -8238,7 +8238,7 @@
               </EffectCreateData>
             </ActionResultData>
           </ActionCellData>
-		  
+
           <ActionCellData iId="2" sName="发射飞弹特效镜像" eTriggerMode="2">
             <ActionAttrData bAble="True" eActionAttrType="4" bFaceLeft="True" />
             <ActionFrameData bAble="True" iMinFrame="24" iMaxFrame="24" />
@@ -8253,15 +8253,15 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>				  
-
-		  
-		  </StateCellData>		  
-
-			
+          </ActionCellData>
 
 
-		  
+		  </StateCellData>
+
+
+
+
+
 		</StateMacData>
       <StateMacData iId="3" sName="受击状态机" eStateMacTypeMark="4">
 	      <ActionCellData iId="2" sName="减缓动作位移" eTriggerMode="2">
@@ -8613,7 +8613,7 @@
           <EndStateUnit iStateMacId="3" iStateId="8" eTrunStateType="1" />
 		  <ActionCellData iId="2" sName="死亡特效1" eTriggerMode="2">
             <ActionAttrData bAble="False" />
-            <ActionFrameData bAble="True" iMinFrame="29" iMaxFrame="29" />	
+            <ActionFrameData bAble="True" iMinFrame="29" iMaxFrame="29" />
             <ActionInputData bAble="False" />
             <ActionResultData bTurnUpState="False" bNeedControlStateMark="False">
               <EffectCreateData iId="1" sName="测试特效" iEffectId="704" bCreateInScene="True" bCreateWithState="True" bFollowPersonPostion="True" bFollowPersonStopTick="True" bFoolowPersonFace="True" bNeedPhysic="True">
@@ -8625,7 +8625,7 @@
                 </PhysicMoveData>
               </EffectCreateData>
             </ActionResultData>
-          </ActionCellData>		
+          </ActionCellData>
           <ActionCellData iId="2" sName="音效" eTriggerMode="2">
             <ActionAttrData bAble="False" />
             <ActionFrameData bAble="True" iMinFrame="29" iMaxFrame="29" />

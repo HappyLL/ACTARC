@@ -87,9 +87,17 @@ namespace ACTGame
 
         CharacterSkillGroupData m_stSKillGroupData;
 
+		BattleObjectData m_stBattleObjectData;
+
+		EntityViewData m_stViewData;
+
         public CharacterData()
         {
             m_stSKillGroupData = new CharacterSkillGroupData();
+
+			m_stBattleObjectData = new BattleObjectData ();
+
+			m_stViewData = new EntityViewData ();
         }
 
         public void Read(XmlElement xml)
@@ -99,6 +107,10 @@ namespace ACTGame
             XmlRead.Attr(xml , "iAiId", ref m_iAiId);
 
             XmlRead.Node(xml , "CharacterSkillGroupData", m_stSKillGroupData);
+
+			XmlRead.Node(xml , "BattleActionData" , m_stBattleObjectData);
+
+			XmlRead.Node(xml , "EntityViewData" , m_stViewData);
         }
 
         public void Write(XmlElement xml)
@@ -108,6 +120,8 @@ namespace ACTGame
             XmlWrite.Attr(xml, "iAiId", ref m_iAiId);
 
             XmlWrite.Node(xml, "CharacterSkillGroupData", m_stSKillGroupData);
+
+			XmlWrite.Node(xml , "EntityViewData" , m_stViewData);
         }
     }
 }
